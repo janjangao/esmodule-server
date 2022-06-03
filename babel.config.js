@@ -1,4 +1,4 @@
-import babelJSX from './@babel:plugin-transform-react-jsx.js';
+import presetEnv from 'https://esm.sh/@babel/preset-env';
 export default {
-  plugins: [babelJSX],
+  // presets: [presetEnv],
 };
