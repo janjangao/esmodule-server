@@ -1,4 +1,4 @@
-import presetEnv from 'https://esm.sh/@babel/preset-env';
+import minify from 'https://esm.sh/babel-preset-minify';
 export default {
-  // presets: [presetEnv],
+  // presets: [minify],
 };

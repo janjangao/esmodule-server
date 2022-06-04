@@ -1,6 +1,10 @@
-import { createRoot } from "https://esm.sh/react-dom/client";
 import React from "https://esm.sh/react";
 import App from "./App.jsx";
 
-const root = createRoot(document.querySelector("#root"));
-root.render(React.createElement(App, { content: "Hello World!" }));
+export const title = "esmodule-server";
+
+export const preloadedState = {};
+
+export default function main({ preloadedState }) {
+  return <App content="Hello World!" />;
+}
