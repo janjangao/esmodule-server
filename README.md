@@ -1,6 +1,6 @@
 # esmodule-server
 
-esmodule-server is a simple, zero-configuration ES module supported HTTP server. It is powerful enough for visit ES module directly by modern browser. Fully support Typescript and React.
+esmodule-server is a simple, zero-configuration ES module supported HTTP server. It is powerful enough for visiting ES module directly through modern browser. Fully support Typescript and React.
 
 ## Features
 
@@ -13,6 +13,7 @@ esmodule-server is a simple, zero-configuration ES module supported HTTP server.
 ## Running
 
 ### Run with docker
+DockerHub: [hayond/esmodule-server](https://hub.docker.com/repository/docker/hayond/esmodule-server)
 
 ```
 # ~/Downloads/static is local static directory, 8888 is local port
@@ -21,12 +22,12 @@ docker run -p 8888:8000 -v ~/Downloads/static:/workspaces --restart unless-stopp
 ```
 
 ### Run with deno
-
+DenoLand: [esmoduleserver](https://deno.land/x/esmoduleserver)
 ```
 deno run --allow-read --allow-net --allow-write https://deno.land/x/esmoduleserver/mod.js
 ```
 
-### Unfortunately, no Node implementation
+### Unfortunately, no Node implementation 
 Merge request welcome or another variation.
 
 ## Examples
@@ -107,8 +108,8 @@ export default function main({ preloadedState = {} }) {
 ```
 
 ### production and dev mode
-- `?dev` add dev parameter to all link dependences, check[esm.sh](https://esm.sh/), for example `http://localhost:8000/example/react-ssr-app/index.html?dev`
-- `?production` add bundle parameter to all link dependences, check[esm.sh](https://esm.sh/), in the meantime, bundle all the local script and minify them.
+- `?dev` add dev parameter to all link dependences, more details: [esm.sh](https://esm.sh/), for example `http://localhost:8000/example/react-ssr-app/index.html?dev`
+- `?production` add bundle parameter to all link dependences, more details: [esm.sh](https://esm.sh/), in the meantime, bundle all the local script and minify them.
 
 ## upcoming features
 - set production mode as default by commandline args.
