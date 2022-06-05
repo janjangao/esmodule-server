@@ -7,10 +7,10 @@ export function getPreloadedState() {
   return {};
 }
 
-export function getServerReady() {
+export function getServerReady() { 
   return false;
 }
 
-export default function main({ preloadedState }) {
+export default function main({ preloadedState }) { 
   return React.createElement(App, { content: "Hello World!" });
 }
