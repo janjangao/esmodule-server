@@ -108,8 +108,8 @@ export default function main({ preloadedState = {} }) {
 ```
 
 ### production and dev mode
-- `?dev` add dev parameter to all link dependences, check[esm.sh](https://esm.sh/), for example `http://localhost:8000/example/react-ssr-app/index.html?dev`
-- `?production` add bundle parameter to all link dependences, check[esm.sh](https://esm.sh/), in the meantime, bundle all the local script and minify them.
+- `?dev` add dev parameter to all link dependences, more details: [esm.sh](https://esm.sh/), for example `http://localhost:8000/example/react-ssr-app/index.html?dev`
+- `?production` add bundle parameter to all link dependences, more details: [esm.sh](https://esm.sh/), in the meantime, bundle all the local script and minify them.
 
 ## upcoming features
 - set production mode as default by commandline args.
