@@ -26,7 +26,7 @@ docker run -p 8888:8000 -v ~/Downloads/static:/workspaces --restart unless-stopp
 deno run --allow-read --allow-net --allow-write https://deno.land/x/esmoduleserver/mod.js
 ```
 
-### Unfortunately, no Node implement
+### Unfortunately, no Node implementation
 Merge request welcome or another variation.
 
 ## Examples
