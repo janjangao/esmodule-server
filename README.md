@@ -13,7 +13,7 @@ esmodule-server is a simple, zero-configuration ES module supported HTTP server.
 ## Running
 
 ### Run with docker
-[hayond/esmodule-server](https://hub.docker.com/repository/docker/hayond/esmodule-server)
+DockerHub: [hayond/esmodule-server](https://hub.docker.com/repository/docker/hayond/esmodule-server)
 
 ```
 # ~/Downloads/static is local static directory, 8888 is local port
@@ -22,7 +22,7 @@ docker run -p 8888:8000 -v ~/Downloads/static:/workspaces --restart unless-stopp
 ```
 
 ### Run with deno
-
+DenoLand: [esmoduleserver](https://deno.land/x/esmoduleserver)
 ```
 deno run --allow-read --allow-net --allow-write https://deno.land/x/esmoduleserver/mod.js
 ```
