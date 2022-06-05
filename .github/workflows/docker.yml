@@ -21,8 +21,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Generate App Version
-        run: echo TAG_VERSION=`git describe --tags --always` >> $GITHUB_ENV      
       -
         name: Build and push
         uses: docker/build-push-action@v3
@@ -30,4 +28,4 @@ jobs:
           push: true
           tags: |
             hayond/esmodule-server:latest
-            hayond/esmodule-server:${{ env.TAG_VERSION }}
+            hayond/esmodule-server:${{github.ref_name}}
