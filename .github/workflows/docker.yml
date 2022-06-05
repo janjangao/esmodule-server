@@ -9,14 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: secrets
     steps:
-      - 
-        name: Dockerhub Readme
-        uses: ms-jpq/sync-dockerhub-readme@v1
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: hayond/esmodule-server
-          readme: "./README.md"    
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
