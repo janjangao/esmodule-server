@@ -52,14 +52,14 @@ import {
   red,
   underline
 } from "https://deno.land/std@0.110.0/fmt/colors.ts";
-import { EventEmitter } from "./lib/node_events";
+import { EventEmitter } from "./lib/node_events.js";
 import {
   rollup,
   VERSION
 } from "./rollup.js";
-import { Command } from "https://deno.land/x/cliffy@v0.19.6/command/mod.ts";
+// import { Command } from "https://deno.land/x/cliffy@v0.19.6/command/mod.ts";
 import * as Cache from "https://deno.land/x/cache@0.2.13/mod.ts";
-import { default as default2 } from "https://cdn.esm.sh/v43/ms@2.1.3/deno/ms.js";
+// import { default as default2 } from "https://cdn.esm.sh/v43/ms@2.1.3/deno/ms.js";
 import { default as default3 } from "./picomatch.js";
 
 // src/rollup/supportUrlSources.ts
@@ -345,15 +345,15 @@ function denoResolver({ fetchOpts, compilerOpts } = {}) {
       }
       const code = await loadUrl(url, fetchOpts);
       if (isTypescript(url.href)) {
-        const outputUrlHref = `${url.href}.js`;
-        const { files: { [outputUrlHref]: output } } = await Deno.emit(url, {
-          check: false,
-          compilerOptions: compilerOpts,
-          sources: {
-            [url.href]: code
-          }
-        });
-        return output;
+        // const outputUrlHref = `${url.href}.js`;
+        // const { files: { [outputUrlHref]: output } } = await Deno.emit(url, {
+        //   check: false,
+        //   compilerOptions: compilerOpts,
+        //   sources: {
+        //     [url.href]: code
+        //   }
+        // });
+        // return output;
       }
       return code;
     }
@@ -394,6 +394,7 @@ async function rollup2(options) {
       }
     });
   } catch (err) {
+    console.error(err);
     if (err?.plugin === denoResolverPlugin.name) {
       const _a = err, { plugin: _plugin, code: _code, pluginCode } = _a, rest = __objRest(_a, ["plugin", "code", "pluginCode"]);
       return error(__spreadValues({
