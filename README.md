@@ -1,6 +1,6 @@
 # esmodule-server
 
-esmodule-server is a simple, zero-configuration ES module supported HTTP server. It is powerful enough for visit ES module directly by modern browser. Fully support Typescript and React.
+esmodule-server is a simple, zero-configuration ES module supported HTTP server. It is powerful enough for visiting ES module directly through modern browser. Fully support Typescript and React.
 
 ## Features
 
