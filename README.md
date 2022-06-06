@@ -29,6 +29,7 @@ DenoLand: [esmoduleserver](https://deno.land/x/esmoduleserver)
 ```
 deno run --allow-read --allow-net --allow-write https://deno.land/x/esmoduleserver/mod.js
 ```
+Write code in currenty directory, and visit `http://localhost:8000/` using modern browser.
 
 ### Unfortunately, no Node implementation 
 Merge request welcome or another variation.
@@ -111,8 +112,8 @@ export default function main({ preloadedState = {} }) {
 ```
 
 ### production and dev mode
-- `?dev` add dev parameter to all link dependences, more details: [esm.sh](https://esm.sh/), for example `http://localhost:8000/example/react-ssr-app/index.html?dev`
-- `?production` add bundle parameter to all link dependences, more details: [esm.sh](https://esm.sh/), in the meantime, bundle all the local scripts and minify them.
+- `?dev` add dev parameter to all link dependences, check more details: [esm.sh](https://esm.sh/), for example `http://localhost:8000/example/react-ssr-app/index.html?dev`
+- `?production` bundle all the local scripts and minify them, in the meantime, add bundle parameter to all link dependences, check more details: [esm.sh](https://esm.sh/).
 
 ## upcoming features
 - set production mode as default by commandline args.
