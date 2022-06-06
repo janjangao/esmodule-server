@@ -116,6 +116,6 @@ export default function main({ preloadedState = {} }) {
 - `?production` bundle all the local scripts and minify them, in the meantime, add bundle parameter to all link dependences, check more details: [esm.sh](https://esm.sh/).
 
 ## upcoming features
-- set production mode as default by commandline args.
-- custom server port by commandline args.
-- ...
+- set production mode as default by command line args.
+- custom server port by command line args.
+- CDN host support for production mode.
