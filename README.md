@@ -121,3 +121,4 @@ export default function main({ preloadedState = {} }) {
 - CDN host support for production mode.
 - modulepreload support.
 - ROOT importmaps support.
+- html customization (scripts, stylesheets, modulepreloads)
