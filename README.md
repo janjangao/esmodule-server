@@ -1,6 +1,6 @@
 # esmodule-server
 
-(esmodule-server)[https://github.com/hayond/esmodule-server] is a simple, zero-configuration ES module supported HTTP server. It is powerful enough for visiting ES module directly through modern browser. Fully support Typescript and React.
+[esmodule-server](https://github.com/hayond/esmodule-server) is a simple, zero-configuration ES module supported HTTP server. It is powerful enough for visiting ES module directly through modern browser. Fully support Typescript and React.
 
 ## Features
 
