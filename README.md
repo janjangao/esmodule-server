@@ -1,13 +1,13 @@
 # esmodule-server
 
-[esmodule-server](https://github.com/hayond/esmodule-server) is a simple, zero-configuration ES module supported HTTP server. It is powerful enough for visiting ES module directly through modern browser. Fully support Typescript and React.
+[esmodule-server](https://github.com/hayond/esmodule-server) is a simple, zero-configuration ES module supported HTTP server. It is powerful enough for visiting ES module directly through modern browser. Fully support Typescript and React syntax. Not only that, but also a react container.
 
 ## Features
 
 - Based on [Deno](https://deno.land), keep same code style with it.
 - Fully support Typescript.
 - Fully support React syntax, can visit `jsx` or `tsx` by modern browser directly.
-- Natively support React App and SSR.
+- A powerful react container, natively support CSR and SSR.
 - Production and Dev mode support by parameters(`?dev`, `?production`).
 
 ## DEMO
