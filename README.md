@@ -119,3 +119,4 @@ export default function main({ preloadedState = {} }) {
 - set production mode as default by command line args.
 - custom server port by command line args.
 - CDN host support for production mode.
+- modulepreload support.
