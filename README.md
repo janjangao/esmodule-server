@@ -120,3 +120,4 @@ export default function main({ preloadedState = {} }) {
 - custom server port by command line args.
 - CDN host support for production mode.
 - modulepreload support.
+- ROOT importmaps support.
