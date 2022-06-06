@@ -32,7 +32,7 @@ deno run --allow-read --allow-net --allow-write https://deno.land/x/esmoduleserv
 Write code in currenty directory, and visit `http://localhost:8000/` using modern browser.
 
 ### Unfortunately, no Node implementation 
-Merge request welcome or another variation.
+The one of core feature is natively support react SSR, deno can run same format code with browser, but node can't. If have any good idea for this, merge request welcome or another variation.
 
 ## Examples
 
