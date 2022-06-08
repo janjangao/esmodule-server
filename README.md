@@ -77,7 +77,7 @@ function App({ content }) {
 export const title = "esmodule-server";
 
 export default function main({ preloadedState }) {
-  return React.createElement(App, { content: "Hello World!" });
+  return <App content={"Hello World!"} />;
 }
 ```
 
@@ -107,7 +107,7 @@ export function getServerReady() {
 
 export default function main({ preloadedState = {} }) {
   Object.assign(store, preloadedState);
-  return React.createElement(App, { content: store.content });
+  return <App content={store.content} />;
 }
 ```
 
