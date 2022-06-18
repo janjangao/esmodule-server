@@ -122,3 +122,4 @@ export default function main({ preloadedState = {} }) {
 - modulepreload support.
 - ROOT importmaps support.
 - html customization (scripts, stylesheets, modulepreloads)
+- setting.js support, dependencies suppport
