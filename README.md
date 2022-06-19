@@ -123,3 +123,5 @@ export default function main({ preloadedState = {} }) {
 - ROOT importmaps support.
 - html customization (scripts, stylesheets, modulepreloads)
 - setting.js support, dependencies suppport
+- localhost cdn producton build
+- es-module-shims support for old browser
