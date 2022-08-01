@@ -13,7 +13,7 @@ export const title = "esmodule-server";
 export default function main({
   preloadedState,
 }: {
-  preloadedState: Record<string, unknown>;
+  preloadedState: Record<string, any>;
 }) {
   return React.createElement(App, { content: "Hello World!" });
 }

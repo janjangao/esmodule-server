@@ -1,6 +1,12 @@
 import React from "https://esm.sh/react";
 
-export default function HTML({ title, entryContent = "", children }) {
+export default function HTML({
+  title,
+  stylesheets = [],
+  scripts = [],
+  entryContent = "",
+  children,
+}) {
   return (
     <html>
       <head>
@@ -10,10 +16,19 @@ export default function HTML({ title, entryContent = "", children }) {
           content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no"
         />
         <title>{title}</title>
+        {stylesheets.map((stylesheet) => (
+          <link href={stylesheet} rel="stylesheet" />
+        ))}
       </head>
       <body>
         <div id="root">{children}</div>
-        <script type="module" dangerouslySetInnerHTML={{__html: entryContent}} />
+        {scripts.map((script) => (
+          <script src={script} />
+        ))}
+        <script
+          type="module"
+          dangerouslySetInnerHTML={{ __html: entryContent }}
+        />
       </body>
     </html>
   );
