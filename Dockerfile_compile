@@ -4,7 +4,8 @@ MAINTAINER Jan Gao <hayond@qq.com>
 WORKDIR /workspaces
 COPY esm.sh /esmodule-server/esm.sh/
 COPY lib /esmodule-server/lib/
+COPY mod.js /esmodule-server/mod.js
 
 EXPOSE 8000
 
-ENTRYPOINT deno run --allow-read --allow-net --allow-write /esmodule-server/lib/server.js
+ENTRYPOINT deno run --allow-read --allow-net --allow-write /esmodule-server/mod.js
