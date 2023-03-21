@@ -1,2 +1,8 @@
 *
 !README.md
+!LICENSE
+!.dockerignore
+!.gitignore
+!.vscode
+!.github
+!deno.lock
